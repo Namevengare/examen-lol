@@ -38,6 +38,12 @@ export const isValidNumber = (value) => {
   if (value === '' || value === null || value === undefined) {
     return false
   }
+  
+  // Validar que no tenga múltiples puntos decimales
+  if (typeof value === 'string' && (value.match(/\./g) || []).length > 1) {
+    return false
+  }
+  
   const num = parseFloat(value)
   return !isNaN(num) && isFinite(num)
 }
