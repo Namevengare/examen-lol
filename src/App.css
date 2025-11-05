@@ -1,0 +1,13 @@
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+}
+
